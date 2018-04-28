@@ -32,9 +32,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the less button is clicked.
      */
-    public void decrement(View view){
-        quantity=quantity-1;
-        display(quantity);
+    public void decrement(View view) {
+        while (quantity >= 1) {
+            quantity = quantity - 1;
+            display(quantity);
+        }
     }
     /**
      * This method is called when the order button is clicked.
